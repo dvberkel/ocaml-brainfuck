@@ -1,1 +1,8 @@
-val test : string -> string
+(*
+ * Commands are atomic operation.
+ *)
+
+type command
+
+val command : string -> command
+val symbol : command -> string
