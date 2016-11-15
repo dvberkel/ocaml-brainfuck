@@ -12,24 +12,24 @@ type command =
 
 let command symbol =
   match symbol with
-    | ">" -> PointerIncrement
-    | "<" -> PointerDecrement
-    | "+" -> Increment
-    | "-" -> Decrement
-    | "." -> Output
-    | "," -> Input
-    | "[" -> LoopStart
-    | "]" -> LoopEnd
+    | '>' -> PointerIncrement
+    | '<' -> PointerDecrement
+    | '+' -> Increment
+    | '-' -> Decrement
+    | '.' -> Output
+    | ',' -> Input
+    | '[' -> LoopStart
+    | ']' -> LoopEnd
     | _   -> PointerIncrement
 
 let symbol command =
   match command with
-    | PointerIncrement -> ">"
-    | PointerDecrement -> "<"
-    | Increment        -> "+"
-    | Decrement        -> "-"
-    | Output           -> "."
-    | Input            -> ","
-    | LoopStart        -> "["
-    | LoopEnd          -> "]"
+    | PointerIncrement -> '>'
+    | PointerDecrement -> '<'
+    | Increment        -> '+'
+    | Decrement        -> '-'
+    | Output           -> '.'
+    | Input            -> ','
+    | LoopStart        -> '['
+    | LoopEnd          -> ']'
 
