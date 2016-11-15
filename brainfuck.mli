@@ -4,5 +4,5 @@
 
 type command
 
-val command : char -> command
+val command : char -> command option
 val symbol : command -> char
